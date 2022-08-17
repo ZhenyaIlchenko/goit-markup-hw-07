@@ -1,12 +1,16 @@
 .header {
 	background-color: var(--first-bgcolor);
 	border-bottom: 1px solid #ececec;
+	> .container {
+		display: flex;
+		align-items: center;
+	}
 }
 
-.header > .container {
-	display: flex;
-	align-items: center;
-}
+// .header > .container {
+// 	display: flex;
+// 	align-items: center;
+// }
 
 .header-nav {
 	display: flex;
@@ -31,11 +35,15 @@
 	padding-bottom: 32px;
 
 	transition: color var(--transition-function);
+
+	.active {
+		color: var(--accent-color);
+	}
 }
 
-.header-link.active {
-	color: var(--accent-color);
-}
+// .header-link.active {
+// 	color: var(--accent-color);
+// }
 
 .header-link:hover,
 .header-link:focus {

@@ -92,7 +92,6 @@ img {
   background-color: var(--first-bgcolor);
   border-bottom: 1px solid #ececec;
 }
-
 .header > .container {
   display: flex;
   align-items: center;
@@ -119,8 +118,7 @@ img {
   padding-bottom: 32px;
   transition: color var(--transition-function);
 }
-
-.header-link.active {
+.header-link .active {
   color: var(--accent-color);
 }
 
@@ -557,7 +555,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 16px 32px; */
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
