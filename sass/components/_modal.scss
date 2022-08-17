@@ -46,11 +46,16 @@
 
 	cursor: pointer;
 	transition: background-image var(--transition-function);
+
+	&:hover,
+	&:focus {
+		background-image: url(../images/close-blue.svg);
+	}
 }
-.modal-btn:hover,
-.modal-btn:focus {
-	background-image: url(../images/close-blue.svg);
-}
+// .modal-btn:hover,
+// .modal-btn:focus {
+// 	background-image: url(../images/close-blue.svg);
+// }
 
 .is-hidden {
 	opacity: 0;
@@ -133,15 +138,23 @@
 	outline: transparent;
 	cursor: pointer;
 	transition: border var(--transition-function);
+
+	&::placeholder {
+		font-size: 12px;
+		line-height: 1.16;
+		letter-spacing: 0.01em;
+
+		color: rgba(117, 117, 117, 0.5);
+	}
 }
 
-.user-text::placeholder {
-	font-size: 12px;
-	line-height: 1.16;
-	letter-spacing: 0.01em;
+// .user-text::placeholder {
+// 	font-size: 12px;
+// 	line-height: 1.16;
+// 	letter-spacing: 0.01em;
 
-	color: rgba(117, 117, 117, 0.5);
-}
+// 	color: rgba(117, 117, 117, 0.5);
+// }
 
 .checkbox {
 	display: flex;

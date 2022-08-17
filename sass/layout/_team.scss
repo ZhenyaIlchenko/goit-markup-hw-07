@@ -61,10 +61,16 @@
 	fill: #afb1b8;
 
 	transition: fill var(--transition-function), background-color var(--transition-function);
+
+	&:hover,
+	&:focus {
+		fill: var(--primary-white-color);
+		background-color: var(--accent-color);
+	}
 }
 
-.team-link-icon:hover,
-.team-link-icon:focus {
-	fill: var(--primary-white-color);
-	background-color: var(--accent-color);
-}
+// .team-link-icon:hover,
+// .team-link-icon:focus {
+// 	fill: var(--primary-white-color);
+// 	background-color: var(--accent-color);
+// }
