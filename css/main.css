@@ -493,14 +493,14 @@ img {
   letter-spacing: 0.03em;
 }
 
-.team-list-icon {
+.team__list-icon {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin: 16px 32px 30px 32px;
 }
 
-.team-link-icon {
+.social-icon__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -510,7 +510,7 @@ img {
   fill: #afb1b8;
   transition: fill var(--transition-function), background-color var(--transition-function);
 }
-.team-link-icon:hover, .team-link-icon:focus {
+.social-icon__link:hover, .social-icon__link:focus {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
 }
