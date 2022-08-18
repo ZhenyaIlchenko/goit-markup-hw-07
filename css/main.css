@@ -760,14 +760,17 @@ img {
   background-color: var(--first-bgcolor);
 }
 
-.portfolio-list-button {
+.portfolio__list-btn {
   margin-bottom: 50px;
+}
+
+.buttons {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.portfolio-btn {
+.buttons__portfolio {
   background: var(--fourth-bgcolor);
   font-family: "Roboto";
   font-style: inherit;
@@ -783,38 +786,38 @@ img {
   border-color: transparent;
   transition: color var(--transition-function), background-color var(--transition-function), box-shadow var(--transition-function);
 }
-.portfolio-btn:hover, .portfolio-btn:focus {
+.buttons__portfolio:hover, .buttons__portfolio:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-list-img {
+.images {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio-item {
+.images__item {
   background-color: var(--primary-white-color);
   width: calc((100% - 60px) / 3);
   text-align: left;
 }
 
-.portfolio-link {
+.images__link {
   display: block;
   transition: box-shadow var(--transition-function);
 }
-.portfolio-link:hover, .portfolio-link:focus {
+.images__link:hover, .images__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-top-wrap {
+.images__top-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-top-text {
+.images__top-text {
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -830,11 +833,17 @@ img {
   transition: transform var(--transition-function);
   overflow: auto;
 }
-.portfolio-link:hover .portfolio-top-text {
+.images__link:hover .images__top-text {
   transform: translateY(0%);
 }
 
-.portfolio-title {
+.images__title-info {
+  padding: 20px 24px;
+  border: 1px solid #eee;
+  border-top: 0;
+}
+
+.images__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -842,15 +851,9 @@ img {
   margin-bottom: 4px;
 }
 
-.portfolio-info {
+.images__info {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-}
-
-.portfolio-title-info {
-  padding: 20px 24px;
-  border: 1px solid #eee;
-  border-top: 0;
 }/*# sourceMappingURL=main.css.map */
