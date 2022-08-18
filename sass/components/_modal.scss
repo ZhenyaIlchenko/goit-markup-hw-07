@@ -8,9 +8,9 @@
 	transition: opacity var(--transition-function), visibility var(--transition-function);
 }
 
-.backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(0);
-}
+// .backdrop.is-hidden .modal {
+// 	transform: translate(-50%, -50%) scale(0);
+// }
 
 .modal {
 	width: 528px;
@@ -27,6 +27,10 @@
 	transition: transform var(--transition-function);
 
 	padding: 40px;
+
+	.backdrop.is-hidden & {
+		transform: translate(-50%, -50%) scale(0);
+	}
 }
 
 .modal-btn {
@@ -102,14 +106,19 @@
 	outline: transparent;
 	cursor: pointer;
 	transition: border var(--transition-function);
+
+	&:hover,
+	&:focus {
+		border: 1px solid var(--accent-color);
+	}
 }
 
-.modal-input:hover,
-.modal-input:focus,
-.user-text:hover,
-.user-text:focus {
-	border: 1px solid var(--accent-color);
-}
+// .modal-input:hover,
+// .modal-input:focus,
+// .user-text:hover,
+// .user-text:focus {
+// 	border: 1px solid var(--accent-color);
+// }
 
 .input-icon {
 	position: absolute;
@@ -117,11 +126,15 @@
 	top: 50%;
 	transform: translateY(-50%);
 	transition: fill var(--transition-function);
+
+	.modal-input:focus + & {
+		fill: var(--accent-color);
+	}
 }
 
-.modal-input:focus + .input-icon {
-	fill: var(--accent-color);
-}
+// .modal-input:focus + .input-icon {
+// 	fill: var(--accent-color);
+// }
 
 .modal-field-text {
 	margin-bottom: 20px;
@@ -145,6 +158,10 @@
 		letter-spacing: 0.01em;
 
 		color: rgba(117, 117, 117, 0.5);
+	}
+	&:hover,
+	&:focus {
+		border: 1px solid var(--accent-color);
 	}
 }
 
@@ -182,6 +199,9 @@
 }
 .check-icon {
 	fill: transparent;
+	.modal-user-check:checked + .modal-form-check & {
+		fill: var(--primary-white-color);
+	}
 }
 .modal-user-check:checked + .modal-form-check span {
 	border: none;
@@ -194,9 +214,9 @@
 	border-color: var(--accent-color);
 }
 
-.modal-user-check:checked + .modal-form-check .check-icon {
-	fill: var(--primary-white-color);
-}
+// .modal-user-check:checked + .modal-form-check .check-icon {
+// 	fill: var(--primary-white-color);
+// }
 
 .modal-check-link {
 	font-size: 14px;
@@ -236,9 +256,14 @@
 	margin-top: 30px;
 
 	transition: background var(--transition-function);
+
+	&:hover,
+	&:focus {
+		background: var(--second-btn-color);
+	}
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
-	background: var(--second-btn-color);
-}
+// .submit-btn:hover,
+// .submit-btn:focus {
+// 	background: var(--second-btn-color);
+// }

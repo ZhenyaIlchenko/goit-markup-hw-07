@@ -207,7 +207,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-mail-tel-color);
-  /* color: rgba(255, 255, 255, 0.6); */
 }
 .footer-mail:hover, .footer-mail:focus,
 .footer-tel:hover,
@@ -560,10 +559,6 @@ img {
   transition: opacity var(--transition-function), visibility var(--transition-function);
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-}
-
 .modal {
   width: 528px;
   min-height: 581px;
@@ -576,6 +571,9 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-function);
   padding: 40px;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-btn {
@@ -640,11 +638,7 @@ img {
   cursor: pointer;
   transition: border var(--transition-function);
 }
-
-.modal-input:hover,
-.modal-input:focus,
-.user-text:hover,
-.user-text:focus {
+.modal-input:hover, .modal-input:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -655,7 +649,6 @@ img {
   transform: translateY(-50%);
   transition: fill var(--transition-function);
 }
-
 .modal-input:focus + .input-icon {
   fill: var(--accent-color);
 }
@@ -680,6 +673,9 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+.user-text:hover, .user-text:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .checkbox {
@@ -710,6 +706,9 @@ img {
 .check-icon {
   fill: transparent;
 }
+.modal-user-check:checked + .modal-form-check .check-icon {
+  fill: var(--primary-white-color);
+}
 
 .modal-user-check:checked + .modal-form-check span {
   border: none;
@@ -720,10 +719,6 @@ img {
 .modal-user-check:hover + .modal-form-check span,
 .modal-user-check:focus + .modal-form-check span {
   border-color: var(--accent-color);
-}
-
-.modal-user-check:checked + .modal-form-check .check-icon {
-  fill: var(--primary-white-color);
 }
 
 .modal-check-link {
@@ -757,9 +752,7 @@ img {
   margin-top: 30px;
   transition: background var(--transition-function);
 }
-
-.submit-btn:hover,
-.submit-btn:focus {
+.submit-btn:hover, .submit-btn:focus {
   background: var(--second-btn-color);
 }
 
@@ -816,10 +809,6 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link:hover .portfolio-top-text {
-  transform: translateY(0%);
-}
-
 .portfolio-top-wrap {
   position: relative;
   overflow: hidden;
@@ -840,6 +829,9 @@ img {
   transform: translateY(100%);
   transition: transform var(--transition-function);
   overflow: auto;
+}
+.portfolio-link:hover .portfolio-top-text {
+  transform: translateY(0%);
 }
 
 .portfolio-title {
