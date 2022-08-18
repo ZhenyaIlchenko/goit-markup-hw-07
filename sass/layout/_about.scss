@@ -3,7 +3,7 @@
 	padding-top: 0;
 }
 
-.about-title {
+.about__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -13,16 +13,16 @@
 	margin-bottom: 50px;
 }
 
-.about-list {
+.about__list {
 	display: flex;
 	gap: 30px;
 }
 
-.about-item {
+.about__item {
 	position: relative;
 }
 
-.about-top-text {
+.about__top-text {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
