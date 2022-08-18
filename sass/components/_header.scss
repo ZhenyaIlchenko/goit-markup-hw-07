@@ -12,17 +12,17 @@
 // 	align-items: center;
 // }
 
-.header-nav {
+.navigation {
 	display: flex;
 	align-items: center;
 }
 
-.header-list {
+.navigation__list {
 	display: flex;
 	margin-left: 93px;
 }
 
-.header-link {
+.navigation__link {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -54,7 +54,7 @@
 // 	color: var(--accent-color);
 // }
 
-.header-item:not(:last-child) {
+.navigation__item:not(:last-child) {
 	margin-right: 50px;
 }
 .active {
@@ -82,15 +82,15 @@
 // 	background-color: var(--accent-color);
 // }
 
-.header-list-contacts {
+.header__list-contacts {
 	display: flex;
 	margin-left: auto;
 	gap: 30px;
 	align-items: center;
 }
 
-.header-mail,
-.header-tel {
+.contacts__mail,
+.contacts__tel {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 500;
@@ -112,7 +112,7 @@
 	}
 }
 
-.header-icon {
+.contacts__icon {
 	margin-right: 10px;
 	fill: currentColor;
 }

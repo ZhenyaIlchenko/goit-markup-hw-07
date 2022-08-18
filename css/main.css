@@ -76,15 +76,15 @@ img {
   letter-spacing: 0.03em;
 }
 
-.logo-prefix {
+.logo__prefix {
   color: var(--accent-color);
 }
 
-.logo-suffix-header {
+.logo__suffix-header {
   color: var(--logo-black-color);
 }
 
-.logo-suffix-footer {
+.logo__suffix-footer {
   color: var(--primary-white-color);
 }
 
@@ -97,17 +97,17 @@ img {
   align-items: center;
 }
 
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.header-list {
+.navigation__list {
   display: flex;
   margin-left: 93px;
 }
 
-.header-link {
+.navigation__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -118,14 +118,14 @@ img {
   padding-bottom: 32px;
   transition: color var(--transition-function);
 }
-.header-link .active {
+.navigation__link .active {
   color: var(--accent-color);
 }
-.header-link:hover, .header-link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
 
-.header-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -143,15 +143,15 @@ img {
   background-color: var(--accent-color);
 }
 
-.header-list-contacts {
+.header__list-contacts {
   display: flex;
   margin-left: auto;
   gap: 30px;
   align-items: center;
 }
 
-.header-mail,
-.header-tel {
+.contacts__mail,
+.contacts__tel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -164,13 +164,13 @@ img {
   padding-bottom: 32px;
   transition: color var(--transition-function);
 }
-.header-mail:hover, .header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
+.contacts__mail:hover, .contacts__mail:focus,
+.contacts__tel:hover,
+.contacts__tel:focus {
   color: var(--accent-color);
 }
 
-.header-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
