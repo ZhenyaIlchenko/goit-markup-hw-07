@@ -185,45 +185,45 @@ img {
   padding-bottom: 60px;
 }
 
-.footer-address {
+.footer__info {
+  display: flex;
+  align-items: baseline;
+}
+
+.address {
   font-style: normal;
   margin-top: 20px;
 }
 
-.footer-address-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-item {
+.address__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
 
-.footer-mail,
-.footer-tel {
+.address__mail,
+.address__tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-mail-tel-color);
 }
-.footer-mail:hover, .footer-mail:focus,
-.footer-tel:hover,
-.footer-tel:focus {
+.address__mail:hover, .address__mail:focus,
+.address__tel:hover,
+.address__tel:focus {
   color: var(--accent-color);
 }
 
-.footer-info {
-  display: flex;
-  align-items: baseline;
-}
-
-.social {
+.footer-social {
   margin-left: 70px;
 }
 
-.footer-social-text {
+.social__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -234,12 +234,12 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-social-list {
+.social__list {
   display: flex;
   gap: 10px;
 }
 
-.footer-social-link {
+.social__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -250,15 +250,15 @@ img {
   fill: #ffffff;
   transition: background-color var(--transition-function);
 }
-.footer-social-link:hover, .footer-social-link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
 }
 
-.mailing {
+.footer-mailing {
   margin-left: auto;
 }
 
-.footer-mailing-text {
+.mailing__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -269,7 +269,12 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-mailing-input {
+.mailing__form {
+  display: flex;
+  gap: 12px;
+}
+
+.mailing__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -279,7 +284,7 @@ img {
   padding-left: 16px;
   color: var(--primary-white-color);
 }
-.footer-mailing-input::placeholder {
+.mailing__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   display: flex;
@@ -288,12 +293,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-mailing {
-  display: flex;
-  gap: 12px;
-}
-
-.footer-mailing-btn {
+.mailing__btn {
   width: 200px;
   height: 50px;
   font-family: "Roboto";
@@ -314,7 +314,7 @@ img {
   border: none;
 }
 
-.footer-btn-icon {
+.mailing__btn-icon {
   display: flex;
   align-items: center;
   justify-content: center;
