@@ -4,16 +4,16 @@
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
-}
 
-.logo__prefix {
-	color: var(--accent-color);
-}
+	&__prefix {
+		color: var(--accent-color);
+	}
 
-.logo__suffix-header {
-	color: var(--logo-black-color);
-}
+	&__suffix-header {
+		color: var(--logo-black-color);
+	}
 
-.logo__suffix-footer {
-	color: var(--primary-white-color);
+	&__suffix-footer {
+		color: var(--primary-white-color);
+	}
 }
